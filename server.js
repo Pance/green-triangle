@@ -21,6 +21,7 @@ var transactions = [
         accountName: 'checking1'
     }];
 
+app.use(express.static('public'));
 
 app.route('/transactions')
   .get(function(req, res) {
